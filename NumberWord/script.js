@@ -76,7 +76,7 @@ function lessThanBillion(num){
 
 function lessThanMillion(num){
 	if(num <= thousand) {
-        return lessThan1000(n);
+        return lessThan1000(num);
     }
 	if(num % thousand == 0 && num <= 9 * hundredThousand) {
         return lessThan1000(Math.floor(num / thousand)) + " " + thousands[1];

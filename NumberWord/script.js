@@ -22,7 +22,7 @@ const billions = ['მილიარდ','მილიარდი'];
 const trillions = ['ტრილიონ','ტრილიონი'];
 const quadrillions = ['კვადრილიონ','კვადრილიონი'];
 
-let word = numberToWord(150)
+let word = numberToWord(1000000000001)
 console.log(word)
 
 function numberToWord(num){
@@ -97,7 +97,7 @@ function lessThanMillion(num){
 
 function lessThan1000(num){
 	if(num <= hundred) {
-        return lessThan100(n);
+        return lessThan100(num);
     }
 	if(num % hundred == 0 && num <= 9 * hundred) {
         return hundreds[Math.floor(num / hundred)] + " " + hundreds[10];
